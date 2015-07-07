@@ -14,7 +14,18 @@ def reverse(s):
 	'''
 	This function generates the reverse of s. s can be a string or a list. It returns the type given to it
 	'''
-	pass
+	original_s = s
+	s_length = len(original_s)
+	new_obj = []
+	for item in s:
+	    
+	    if len(new_obj) == 0:
+	        new_obj.append(item)
+	    else:
+	        new_obj.insert(0,item)
+	   
+	return (new_obj)
+	
 
 def intersection(a,b):
 	'''
