@@ -17,14 +17,20 @@ def reverse(s):
 	original_s = s
 	s_length = len(original_s)
 	new_obj = []
+	final_obj = ''
 	for item in s:
 	    
 	    if len(new_obj) == 0:
 	        new_obj.append(item)
 	    else:
 	        new_obj.insert(0,item)
-	   
-	return (new_obj)
+	
+	if type(s) == str:
+	    for it in new_obj:
+	        final_obj += it
+	    return final_obj
+	else:
+	    return new_obj
 	
 
 def intersection(a,b):
