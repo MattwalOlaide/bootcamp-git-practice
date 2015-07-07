@@ -6,7 +6,7 @@ def unique(l):
 	new_list = []
 	for item in l:
 		if item not in new_list:
-			new_list.append(item)
+			new_list[len(new_list)]= item
 	return new_list
 	
 
@@ -43,7 +43,12 @@ def frequency(needle, haystack):
 	'''
 	This function returns the number of times needle appears in haystack
 	'''
-	pass
+	num_of_needles = 0
+	for item in haystack:
+		if item == needle:
+			num_of_needles += 1
+	return num_of_needles
+	
 
 def sort(l):
 	'''
