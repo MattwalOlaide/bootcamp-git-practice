@@ -15,7 +15,15 @@ def intersection(a,b):
 	'''
 	This function returns the intersection of a and b - A list of common elements between a and b
 	'''
-	pass
+	
+	interList = []
+	for item1 in a:
+		for item2 in b:
+		    if item1 == item2:
+    			interList.append(item1)
+    			
+	return  interList
+	
 
 def generate(steps):
 	pass
@@ -36,4 +44,5 @@ def sort(l):
 	'''
 	This function returns a sorted version of l
 	'''
+
 	pass
